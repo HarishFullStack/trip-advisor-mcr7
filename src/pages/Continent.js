@@ -6,10 +6,21 @@ export function Continent(){
     const navigate = useNavigate();
 
     return(
-        data.continents.map((x) => {
-            return(
-                <div key={x.id} onClick={() => navigate(`/${x.id}`)}>{x.name}</div>
-            )
-        })
+        
+                // <div key={x.id} onClick={() => navigate(`/${x.id}`)}>{x.name}</div>
+                <div className='continents'>
+                    <h1>Welcome To Trip Advisor</h1>
+                        <h5>Top Continents for your next holiday</h5>
+                        <div className='row'>
+                            {data.continents.map((x) => {
+                                return(
+                                    <div className="card" style={{width: "18rem"}} onClick={() => navigate(`/${x.id}`)}>
+                                        <img src={x.image} className="card-img-top" alt={x.name}/>
+                                    </div>
+                                )
+                            })}
+                        </div>
+                    </div>
+            
     )
 }
