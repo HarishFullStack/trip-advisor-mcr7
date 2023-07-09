@@ -13,11 +13,14 @@ export function Countries(){
                 )
             })} */}
             <h5>Top Countries in {data.continents.find((x) => x.id === Number(continentId)).name} for your next holiday</h5>
-            <div className='row'>
+            <div className='d-flex'>
                 {data.continents.find((x) => x.id === Number(continentId)).countries.map((y) => {
                     return(
-                        <div className="card" style={{width: "18rem"}} onClick={() => navigate(`/${Number(continentId)}/${y.id}`)}>
-                            <img src={y.image} className="card-img-top" alt={y.name}/>
+                        <div className='container'>
+                            <div className="card" style={{width: "18rem"}} onClick={() => navigate(`/${Number(continentId)}/${y.id}`)}>
+                                <img src={y.image} className="card-img-top" alt={y.name}/>
+                            </div>
+                            <div className='name'><i class="fa fa-map-marker" aria-hidden="true"></i> {y.name}</div>
                         </div>
                     )
                 })}

@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  padding: 2rem;
 }
 
 .App-logo {
@@ -39,4 +40,25 @@
 
 .card{
   cursor: pointer;
+  margin: 2rem;
+}
+
+.destination-details{
+  text-align: left !important;
+}
+
+.name{
+  position: absolute;
+  bottom: 48px;
+  left: 60px;
+}
+
+.container{
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+img{
+  width: 100% !important;
 }
