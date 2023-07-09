@@ -16,16 +16,6 @@ export function Details(){
         getDetails();
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
-    // description:
-    //               "The Taj Mahal is an ivory-white marble mausoleum on the right bank of the Yamuna river in the Indian city of Agra.",
-    //             image: "https://i.postimg.cc/Xq6RrjCL/tajMahal.jpg",
-    //             ratings: 4.5,
-    //             reviews: 250,
-    //             location: "Agra, India",
-    //             openingHours: "6:00 AM - 7:00 PM",
-    //             ticketPrice: "$20",
-    //             website: "https://example.com/taj_mahal",
-
     return(
         <div className="row">
             <h5>{details.name}</h5>

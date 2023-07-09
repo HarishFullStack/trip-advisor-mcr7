@@ -7,11 +7,6 @@ export function Countries(){
 
     return(
         <div>
-            {/* {data.continents.find((x) => x.id === Number(continentId)).countries.map((y) => {
-                return(
-                    <div key={y.id} onClick={() => navigate(`/${Number(continentId)}/${y.id}`)}>{y.name}</div>
-                )
-            })} */}
             <h5>Top Countries in {data.continents.find((x) => x.id === Number(continentId)).name} for your next holiday</h5>
             <div className='d-flex'>
                 {data.continents.find((x) => x.id === Number(continentId)).countries.map((y) => {
